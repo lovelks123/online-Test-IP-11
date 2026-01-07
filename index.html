@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div id="loginBox">
+    <h2>Student Login</h2>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <div id="loginMsg" class="msg"></div>
+  </div>
+
+  <!-- TEST -->
+  <div id="testBox" style="display:none">
+    <h3 id="questionText"></h3>
+
+    <textarea id="answerBox" placeholder="Type your answer here"></textarea>
+
+    <button id="nextBtn" onclick="nextQuestion()">Next</button>
+
+    <div id="progress"></div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="resultBox" style="display:none"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

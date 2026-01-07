@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+  background: white;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background: gray;
+}
+
+.msg {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#progress {
+  margin-top: 10px;
+  text-align: center;
+  color: gray;
+}
