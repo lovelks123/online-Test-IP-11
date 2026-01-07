@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/YOUR_APPS_SCRIPT_WEBAPP_URL/exec";
+const API_URL = "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbzspd3wCrTr_uG2_3270LmaQCFuLGIfFmrogh3dsR-fa_9p4f3acnRRQVCNqRGjlrDX/exec";
 
 let QUESTIONS = [];
 let ANSWERS = [];
@@ -113,3 +113,4 @@ function showMsg(msg, error) {
   el.innerText = msg;
   el.style.color = error ? "red" : "green";
 }
+
