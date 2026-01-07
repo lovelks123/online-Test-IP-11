@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Online Test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<h2>Student Login</h2>
 
-  <!-- LOGIN -->
-  <div id="loginBox">
-    <h2>Student Login</h2>
-    <input id="username" placeholder="Username">
-    <input id="password" type="password" placeholder="Password">
-    <button onclick="login()">Login</button>
-    <div id="loginMsg" class="msg"></div>
-  </div>
+<form method="POST" action="YOUR_EXEC_URL" target="resultFrame">
 
-  <!-- TEST -->
-  <div id="testBox" style="display:none">
-    <h3 id="questionText"></h3>
+  <input type="hidden" name="action" value="login">
 
-    <textarea id="answerBox" placeholder="Type your answer here"></textarea>
+  <input name="username" placeholder="Username" required><br><br>
+  <input name="password" type="password" placeholder="Password" required><br><br>
 
-    <button id="nextBtn" onclick="nextQuestion()">Next</button>
+  <button type="submit">Login</button>
+</form>
 
-    <div id="progress"></div>
-  </div>
+<hr>
 
-  <!-- RESULT -->
-  <div id="resultBox" style="display:none"></div>
+<form method="POST" action="YOUR_EXEC_URL" target="resultFrame">
 
-</div>
+  <input type="hidden" name="action" value="submit">
+  <input type="hidden" name="username" value="s001">
+  <input type="hidden" name="roll" value="11A01">
+  <input type="hidden" name="total" value="3">
 
-<script src="script.js"></script>
+  <p>Q1. What is memory?</p>
+  <input type="hidden" name="qid_1" value="101">
+  <textarea name="ans_1"></textarea>
+
+  <p>Q2. Expand RAM</p>
+  <input type="hidden" name="qid_2" value="102">
+  <textarea name="ans_2"></textarea>
+
+  <p>Q3. Which memory is volatile?</p>
+  <input type="hidden" name="qid_3" value="103">
+  <textarea name="ans_3"></textarea>
+
+  <br><br>
+  <button type="submit">Submit Test</button>
+</form>
+
+<iframe name="resultFrame" style="width:100%;height:200px;border:1px solid #ccc"></iframe>
+
 </body>
 </html>
